@@ -4,7 +4,7 @@ export default function TechIcons() {
   return (
     <section className="my-16">
       <h2 className="text-2xl font-bold text-center">Tecnologías que uso</h2>
-      <div className="flex justify-center space-x-8 mt-8">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-8">
         <Tooltip className="dark" content="JavaScript">
           <SiJavascript size={50} title="JavaScript" />
         </Tooltip>
