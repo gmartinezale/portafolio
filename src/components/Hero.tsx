@@ -16,8 +16,8 @@ export default function Hero() {
         </div>
       </div>
       <div className="text-left md:text-cente justify-items-startr">
-        <h1 className="text-4xl font-bold">Hola, soy Alexis González</h1>
-        <p className="mt-4 text-lg">
+        <h1 className="text-4xl font-bold text-white">Hola, soy Alexis González</h1>
+        <p className="mt-4 text-lg  text-gray-300">
           Tengo más de 12 años de experiencia en desarrollo web, especializado en tecnologías modernas como JS, Next.js, Node, MongoDB, MySQL, PostgreSQL, AWS y Python.
         </p>
 
