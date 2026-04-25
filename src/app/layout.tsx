@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Providers from "./providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Portafolio Alexis González",
-  description: "Portafolio personal de Alexis González, Desarrollador Full Stack.",
+  description: "Portafolio personal de Alexis González, Desarrollador Full Stack con más de 12 años de experiencia.",
 };
 
 export default function RootLayout({
@@ -24,14 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#080b12] min-h-screen`}
       >
-        {children}
-        <footer className="text-center text-gray-500 text-sm py-8">
-        <p>© 2024 Alexis González. Todos los derechos reservados.</p>
-        </footer>
+        <Providers>
+          {children}
+          <footer className="text-center text-gray-500 text-sm py-8 border-t border-gray-800/50 mt-16">
+            <p>© 2026 Alexis González. Todos los derechos reservados.</p>
+          </footer>
+        </Providers>
       </body>
     </html>
   );
